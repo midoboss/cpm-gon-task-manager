@@ -1,0 +1,94 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    background-color: #e9ebee;
+    color: #1c1e21;
+  }
+  
+  header {
+    background-color: #1877f2;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+  
+  h2 {
+    margin-top: 0;
+    border-bottom: 1px solid #dddfe2;
+    padding-bottom: 5px;
+  }
+  
+  input, select, button, textarea {
+    padding: 12px;
+    margin: 8px 0;
+    width: 100%;
+    border: 1px solid #ccd0d5;
+    border-radius: 8px;
+    font-size: 15px;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  button {
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #165ecb;
+  }
+  
+  .task {
+    padding: 15px;
+    border: 1px solid #dddfe2;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    background-color: #f5f6f7;
+  }
+  
+  .task .title {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .actions {
+    margin-top: 10px;
+  }
+  
+  .actions button {
+    width: auto;
+    margin-right: 8px;
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+  
+  .filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .filters input, .filters select {
+    flex: 1;
+  }
+  
