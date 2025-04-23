@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CPM GON Task Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>CPM GON - Task Manager</header>
+  <div class="container">
+    <h2>Create Task</h2>
+    <input type="text" id="title" placeholder="Title" />
+    <textarea id="description" placeholder="Description"></textarea>
+    <input type="date" id="deadline" />
+    <select id="priority">
+      <option value="High">High</option>
+      <option value="Medium" selected>Medium</option>
+      <option value="Low">Low</option>
+    </select>
+    <input type="text" id="category" placeholder="Category" />
+    <button onclick="addTask()">Add Task</button>
+
+    <h2>Filters</h2>
+    <div class="filters">
+      <input type="text" id="search" placeholder="Search" oninput="filterTasks()" />
+      <select id="filter-priority" onchange="filterTasks()">
+        <option value="">All Priorities</option>
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+      </select>
+      <input type="text" id="filter-category" placeholder="Filter by Category" oninput="filterTasks()" />
+    </div>
+
+    <h2>Tasks</h2>
+    <div id="task-list"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
