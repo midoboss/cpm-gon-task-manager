@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CPM GON Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>CPM GON - Task Manager</h1>
+
+  <!-- Formulaire de création ou modification -->
+  <div class="form">
+    <input type="text" id="title" placeholder="Task Title" required>
+    <input type="text" id="description" placeholder="Description">
+    <input type="date" id="deadline" required>
+    <select id="priority">
+      <option value="High">High</option>
+      <option value="Medium" selected>Medium</option>
+      <option value="Low">Low</option>
+    </select>
+    <input type="text" id="category" placeholder="Category">
+    <button onclick="addTask()">Add Task</button>
+  </div>
+
+  <!-- Filtres et recherche -->
+  <div class="filters">
+    <input type="text" id="search" placeholder="Search by title or category">
+    <select id="filter-priority">
+      <option value="">All Priorities</option>
+      <option value="High">High</option>
+      <option value="Medium">Medium</option>
+      <option value="Low">Low</option>
+    </select>
+    <input type="text" id="filter-category" placeholder="Filter by category">
+    <button onclick="filterTasks()">Search</button>
+  </div>
+
+  <!-- 🔵 Div de chargement -->
+   
+  <div id="loading" style="display:none; color:blue; font-weight:bold; margin:10px 0;">Loading...</div>
+  <!-- Zone d'affichage des tâches -->
+  <div id="task-list"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
